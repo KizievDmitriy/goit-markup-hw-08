@@ -1,0 +1,78 @@
+.comand {
+  background: #f5f4fa;
+}
+
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.list-comand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  & .list:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.item-comand {
+  padding-bottom: 30px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+.comand-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.comand-text {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+.comand-list {
+  width: 44px;
+  height: 44px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-link {
+  @extend %centeredFlex;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: transform 250ms $animation-cubic;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    transform: scale(1.25);
+  }
+}
+
+.comand-link {
+  fill: $icon-fill;
+  transform: scale(1);
+  transition: fill 250ms $animation-cubic, transform 250ms $animation-cubic;
+  .social-link:hover &,
+  .social-link:focus & {
+    fill: $accent-text-color;
+    transform: scale(1.25);
+  }
+}

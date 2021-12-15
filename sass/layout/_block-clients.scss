@@ -1,0 +1,29 @@
+.client__list {
+  display: flex;
+}
+
+.client__item:not(:last-child) {
+  margin-right: $item-card;
+}
+.client .client__item {
+  width: 170px;
+  height: 92px;
+}
+
+.client__link {
+  @extend %centeredFlex;
+  width: 100%;
+  height: 100%;
+  color: $icon-fill;
+  border: 1px solid $icon-fill;
+  border-radius: $item-border-radius;
+  transition: color 250ms $animation-cubic, border 250ms $animation-cubic;
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
+}
+.client__icon {
+  fill: currentColor;
+}

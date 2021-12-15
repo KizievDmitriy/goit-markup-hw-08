@@ -1,0 +1,20 @@
+.form {
+  width: 448px;
+  margin-top: 12px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16em;
+  letter-spacing: 0.01em;
+  color: $title-text-color;
+}

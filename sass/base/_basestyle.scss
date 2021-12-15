@@ -1,0 +1,17 @@
+body {
+  color: $primary-text-color;
+  background: $main-background;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 80px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.box-link {
+  display: flex;
+  align-items: center;
+}

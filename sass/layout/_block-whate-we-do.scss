@@ -1,0 +1,25 @@
+.work-list {
+  align-items: center;
+  & .work-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.card-thumb-work {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.work-list__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.03em;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+  color: $accent-text-color;
+}

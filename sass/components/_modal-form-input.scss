@@ -1,0 +1,33 @@
+.form__input {
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: $item-border-radius;
+  outline: none;
+  padding: 12px 42px;
+  cursor: pointer;
+  fill: $accent-text-color;
+  transition: border-color 250ms $animation-cubic, fill 250ms $animation-cubic;
+  &:focus,
+  &:hover {
+    border-color: $accent-color;
+  }
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16em;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  fill: $primary-text-color;
+  transition: fill 250ms $animation-cubic;
+  .form__input:hover ~ &,
+  .form__input:focus ~ & {
+    fill: $accent-color;
+  }
+}

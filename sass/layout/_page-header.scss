@@ -1,0 +1,10 @@
+.page-header {
+  position: fixed;
+  min-width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  background: $main-background;
+  border-bottom: 1px solid #ececec;
+}

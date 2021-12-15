@@ -1,0 +1,40 @@
+.card-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.card-action {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(0);
+  transition: transform 250ms $animation-cubic;
+  &__text {
+    padding: 63px 24px;
+    font-size: 18px;
+    line-height: 1.55em;
+    letter-spacing: 0.03em;
+    color: $accent-text-color;
+  }
+  .card:hover & {
+    transform: translateY(-100%);
+  }
+}
+
+.card-label {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+  &__title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 1.87;
+    color: $title-text-color;
+  }
+}

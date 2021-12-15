@@ -1,0 +1,104 @@
+.footer {
+  background: #2f303a;
+}
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 60px 0px;
+}
+.logo--footer {
+  color: $accent-text-color;
+}
+.footer-list {
+  margin-top: 20px;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  & .item-link:not(:last-child) {
+    display: flex;
+    margin-bottom: 9px;
+  }
+}
+
+.footer-mail,
+.footer-tel {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link {
+  color: $accent-text-color;
+  line-height: 2;
+  font-size: 14px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+.footer-box {
+  display: flex;
+  align-items: baseline;
+}
+.social-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 70px;
+}
+.footer-box-title {
+  margin-bottom: 20px;
+  color: $accent-text-color;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-item-link {
+  background: rgba(255, 255, 255, 0.1);
+  transition: background 250ms $animation-cubic;
+}
+.footer-item-fill {
+  transform: scale(1);
+  fill: $accent-text-color;
+  transition: transform 250ms $animation-cubic, fill 250ms $animation-cubic;
+  &:hover {
+    transform: scale(1.25);
+    fill: #fff;
+  }
+}
+
+.mail-box {
+  margin-left: auto;
+}
+
+.footer-btn {
+  @extend %centeredFlex;
+}
+
+.mail-label {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: $item-border-radius;
+  outline: none;
+  background-color: inherit;
+  font-size: 16px;
+  line-height: 1.25em;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-item-telega {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}

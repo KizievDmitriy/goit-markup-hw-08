@@ -1,0 +1,20 @@
+.modal-link {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  @extend %centeredFlex;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.modal-item-close {
+  fill: $primary-text-color;
+  transition: fill 250ms $animation-cubic;
+  .modal-link:hover &,
+  .modal-link:focus & {
+    fill: $accent-color;
+  }
+}

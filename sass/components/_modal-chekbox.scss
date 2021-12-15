@@ -1,0 +1,53 @@
+.chekbox-txt {
+  @extend %centeredFlex;
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+  cursor: pointer;
+}
+
+.modal-txt-area {
+  height: auto;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.checkbox {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid;
+  border-color: #212121;
+  border-radius: $item-border-radius;
+  margin-right: 7px;
+  transition: border-color 250ms $animation-cubic;
+  .checkbox:checked + & {
+    border-color: $accent-color;
+  }
+}
+
+.checkbox-icon {
+  position: absolute;
+  top: 4px;
+  left: 12px;
+  transform: scale(0);
+  transition: transform 250ms $animation-cubic;
+  .checkbox:checked ~ & {
+    transform: scale(1);
+  }
+}
+
+.chekbox-txt-accent {
+  color: $accent-color;
+}
