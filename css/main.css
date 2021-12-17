@@ -371,6 +371,28 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+}
+
+.menu-button__icon-close {
+  display: none;
+}
+
+.is-open .menu-button__icon-close {
+  display: none;
+}
+
+.is-open .menu-button__icon-menu {
+  display: block;
+}
+
 .logo {
   display: inline-block;
   color: #212121;
