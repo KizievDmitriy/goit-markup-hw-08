@@ -36,14 +36,14 @@
                 </ul>
             </nav>
             <ul class="list list--contacts-nav ">
-                <li class="list__item ">
+                <li class="list__contacts ">
                     <a href="mailto:info@devstudio.com" class="list__mail-tel ">
                         <svg class="list__item-mail-svg">
                             <use href="./image/symbol-defs.svg#icon-mail"></use>
                         </svg>info@devstudio.com
                     </a>
                 </li>
-                <li class="list__item ">
+                <li class="list__contacts ">
                     <a href="tel:+380961111111" class="list__mail-tel ">
                         <svg class="list__item-phone-svg">
                             <use href="./image/symbol-defs.svg#icon-smartphone"></use>
@@ -111,7 +111,7 @@
             </div>
         </section>
         <!------------------------------ Block-whate-we-do -------------------------->
-        <section class=" section ">
+        <section class=" section hidden ">
             <div class="container">
                 <h2 class="work-title">Чем мы занимаемся</h2>
                 <ul class="list  work-list">
@@ -151,8 +151,8 @@
         <section class="comand section ">
             <div class="container">
                 <h2 class=" work-title">Наша команда</h2>
-                <div class="list-comand">
-                    <ul class="list ">
+                <div class="comand-wrapper">
+                    <ul class="list list--comand">
                         <li class="item-comand">
                             <img src="./image/img-Igor.jpg" alt="Игорь Демьяненко" width="270">
                             <h3 class="comand-title">Игорь Демьяненко</h3>
@@ -191,7 +191,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <ul class="list">
+                    <ul class="list list--comand">
                         <li class="item-comand">
                             <img src="./image/img-Olga.jpg" alt="Ольга Репина" width="270">
                             <h3 class="comand-title">Ольга Репина</h3>
@@ -230,7 +230,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <ul class="list">
+                    <ul class="list list--comand">
                         <li class="item-comand">
                             <img src="./image/img-Nik.jpg" alt="Николай Тарасов" width="270">
                             <h3 class="comand-title ">Николай Тарасов</h3>
@@ -269,7 +269,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <ul class="list">
+                    <ul class="list list--comand">
                         <li class="item-comand">
                             <img src="./image/img-Mih.jpg" alt="Михаил Ермаков" width="270">
                             <h3 class="comand-title">Михаил Ермаков</h3>
@@ -415,7 +415,7 @@
                 </div>
                 <div class="mail-box social-box">
                     <p class="footer-box-title">Подпишитесь на рассылку</p>
-                    <form action="#form-action-modal" class="social-list">
+                    <form action="#form-action-modal" class="footer-social-list">
                         <label for="email">
                             <input type="email" name="email" placeholder="E-mail" id="email" class="mail-label">
                         </label>

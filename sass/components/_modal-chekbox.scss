@@ -2,11 +2,15 @@
   @extend %centeredFlex;
   position: relative;
   margin-bottom: 30px;
-  font-size: 14px;
+
+  font-size: 12px;
   line-height: 1.71em;
   letter-spacing: 0.03em;
   color: $title-text-color;
   cursor: pointer;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .modal-txt-area {
@@ -39,12 +43,17 @@
 
 .checkbox-icon {
   position: absolute;
-  top: 4px;
-  left: 12px;
+  border-radius: 4px;
+  top: 3px;
+  left: 1px;
   transform: scale(0);
   transition: transform 250ms $animation-cubic;
   .checkbox:checked ~ & {
     transform: scale(1);
+  }
+  @media screen and (min-width: 768px) {
+    top: 4px;
+    left: 12px;
   }
 }
 

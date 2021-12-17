@@ -2,10 +2,31 @@
   background: #2f303a;
 }
 .page-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: flex-start;
   padding: 60px 0px;
+}
+.adress-box {
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    margin-left: 76px;
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    align-items: flex-start;
+  }
+}
+.footer-social-list {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .logo--footer {
   color: $accent-text-color;
@@ -16,8 +37,12 @@
 .footer-item {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
   & .item-link:not(:last-child) {
-    display: flex;
+    // display: flex;
     margin-bottom: 9px;
   }
 }
@@ -40,15 +65,27 @@
   text-decoration: none;
 }
 .footer-box {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // align-items: baseline;
 }
 .social-box {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  // align-items: flex-start;
   flex-direction: column;
-  margin-left: 70px;
+
+  margin-bottom: 60px;
+  @media screen and(min-width: 1200px) {
+    align-items: flex-start;
+    margin-left: 70px;
+  }
 }
 .footer-box-title {
   margin-bottom: 20px;
@@ -58,6 +95,7 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .footer-item-link {
@@ -75,17 +113,28 @@
 }
 
 .mail-box {
-  margin-left: auto;
+  width: 100%;
+  margin-bottom: 0px;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+    margin-left: 93px;
+  }
 }
 
 .footer-btn {
   @extend %centeredFlex;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .mail-label {
-  width: 358px;
-  height: 50px;
-  margin-right: 12px;
+  width: 100%;
+  margin-bottom: 20px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: $item-border-radius;
@@ -95,6 +144,11 @@
   line-height: 1.25em;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  @media screen and(min-width: 1200px) {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+  }
 }
 
 .footer-item-telega {

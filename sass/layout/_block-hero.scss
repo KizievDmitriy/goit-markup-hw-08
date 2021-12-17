@@ -13,25 +13,33 @@
   background-size: cover;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../image/herobackgraund.jpg');
+
   &__title {
     font-family: Roboto;
-
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61em;
+    letter-spacing: 0.06em;
+
     color: $accent-text-color;
     margin-bottom: 30px;
-    width: 696px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
   &__btn {
     color: $accent-text-color;
     background-color: $accent-color;
     padding: 10px 32px;
     min-width: 200px;
-    min-height: 50px;
+    height: 50px;
     font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87em;
+    letter-spacing: 0.06em;
     border: none;
     border-radius: $item-border-radius;
     cursor: pointer;

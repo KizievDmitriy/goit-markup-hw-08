@@ -1,5 +1,7 @@
 .work-list {
-  align-items: center;
+  display: flex;
+
+  // align-items: center;
   & .work-list__item:not(:last-child) {
     margin-right: 30px;
   }
