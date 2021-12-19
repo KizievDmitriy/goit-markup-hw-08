@@ -20,12 +20,12 @@
   }
   @media screen and (min-width: 768px) {
     width: 354px;
-    flex-basis: calc((100% / 2) - $item-card);
+    // flex-basis: calc((100% / 2) - $item-card);
+
     margin-right: $item-card;
   }
   @media screen and (min-width: 1200px) {
     width: 370px;
-    flex-basis: calc((100% / 3) - $item-card);
-    margin-right: $item-card;
+    // flex-basis: calc((100% / 3) - $item-card);
   }
 }
