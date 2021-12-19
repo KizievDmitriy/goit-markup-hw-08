@@ -20,29 +20,34 @@
     <!-- Heder -->
     <header class="page-header">
         <div class="container page-nav">
+            <a href="" class="logo"><span class="logo--accent">Web</span>Studio</a>
             <nav class="box-link">
-                <a href="" class="logo"><span class="logo--accent">Web</span>Studio</a>
                 <ul class="list list--nav">
                     <li class="list__item ">
-                        <a href="./index.html" class="list__link ">Студия</a>
+                        <a href="./index.html" class="list__link list__сurrent--page">Студия</a>
                     </li>
                     <li class="list__item">
-                        <a href="./portfolio.html" class="list__link list__сurrent--page">Портфолио</a>
+                        <a href="./portfolio.html" class="list__link">Портфолио</a>
                     </li>
                     <li class="list__item">
                         <a href="" class="list__link">Контакты</a>
                     </li>
                 </ul>
+                <button type="button" class="menu-button  js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use href="image/symbol-defs.svg#icon-menu" class="menu-button__icon-menu"></use>
+                    </svg>
+                </button>
             </nav>
             <ul class="list list--contacts-nav ">
-                <li class="list__item ">
+                <li class="list__contacts ">
                     <a href="mailto:info@devstudio.com" class="list__mail-tel ">
                         <svg class="list__item-mail-svg">
                             <use href="./image/symbol-defs.svg#icon-mail"></use>
                         </svg>info@devstudio.com
                     </a>
                 </li>
-                <li class="list__item ">
+                <li class="list__contacts ">
                     <a href="tel:+380961111111" class="list__mail-tel ">
                         <svg class="list__item-phone-svg">
                             <use href="./image/symbol-defs.svg#icon-smartphone"></use>
@@ -50,6 +55,7 @@
                     </a>
                 </li>
             </ul>
+    
         </div>
     </header>
     <!------------ block-main -------------->

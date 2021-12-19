@@ -369,6 +369,13 @@ button {
           align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .page-nav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .menu-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -563,12 +570,6 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .list--nav {
-    margin-left: 88px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .list--nav {
     margin-left: 93px;
@@ -590,6 +591,7 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-left: auto;
   }
 }
 
