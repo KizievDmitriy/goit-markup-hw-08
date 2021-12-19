@@ -8,22 +8,3 @@
   background: $main-background;
   border-bottom: 1px solid #ececec;
 }
-.menu-button {
-  display: inline-flex;
-  border: none;
-  margin: 0px;
-  padding: 0px;
-  background-color: transparent;
-}
-
-.menu-button__icon-close {
-  display: none;
-}
-
-.is-open .menu-button__icon-close {
-  display: none;
-}
-
-.is-open .menu-button__icon-menu {
-  display: block;
-}

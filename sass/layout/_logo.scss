@@ -5,6 +5,12 @@
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 1.16em;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
   &--accent {
     color: $accent-color;
   }

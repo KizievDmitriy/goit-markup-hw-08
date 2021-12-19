@@ -22,6 +22,9 @@
 
 .list--nav {
   display: flex;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   @media screen and (min-width: 768px) {
     margin-left: 88px;
   }
@@ -39,6 +42,9 @@
 //   margin-right: 0px;
 // }
 .list--contacts-nav {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
   }
@@ -72,9 +78,9 @@
   &:focus {
     color: $accent-color;
   }
-  &:hover:after {
-    opacity: 1;
-  }
+}
+.list__link:hover:after {
+  opacity: 1;
 }
 
 .list__item-mail-svg {

@@ -4,10 +4,13 @@
 @import 'base/reset';
 @import 'utils/mixins';
 @import 'utils/placeholder';
+
 @import 'components/container';
+@import 'layout/menu';
 @import 'layout/page-header';
 @import 'layout/logo';
 @import 'layout/header-nav';
+
 @import 'layout/filter-btn-section';
 @import 'components/projet-list';
 @import 'layout/projects-menu-card';

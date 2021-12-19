@@ -13,8 +13,8 @@
 .modal-item-close {
   fill: $primary-text-color;
   transition: fill 250ms $animation-cubic;
-  .modal-link:hover &,
-  .modal-link:focus & {
+  &:hover,
+  &:focus {
     fill: $accent-color;
   }
 }
