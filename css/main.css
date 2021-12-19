@@ -1399,6 +1399,12 @@ button {
   pointer-events: none;
 }
 
+@media screen and (max-width: 1200px) {
+  .hidden {
+    display: none;
+  }
+}
+
 .modal {
   position: absolute;
   top: 50%;
