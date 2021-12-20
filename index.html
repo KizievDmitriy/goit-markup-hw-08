@@ -122,7 +122,13 @@
                 <ul class="list  work-list">
                     <li class="work-list__item">
                         <div class="card-thumb">
-                            <img src="./image/img-dev.jpg" alt="карьтинка-разработчика" width="370" />
+                                <img 
+                                    srcset="
+                                    ./image/what-we-do/img-dev.jpg 1x, 
+                                    ./image/what-we-do/img1desk-2x.jpg 2x"
+                                    src="./image/what-we-do/img-dev.jpg" 
+                                    alt="карьтинка-разработчика"
+                                />
                             <div class="card-thumb-work">
                                 <h3 class=" work-list__text">Десктопные приложения</h3>
                             </div>
@@ -131,7 +137,13 @@
                     </li>
                     <li class="work-list__item">
                         <div class="card-thumb">
-                            <img src="./image/img-mob.jpg" alt="картинка-мобильного-разработчика" width="370" />
+                                <img 
+                                    srcset=" 
+                                    ./image/what-we-do/img-mob.jpg 1x,
+                                    ./image/what-we-do/img2desk-2x.jpg 2x"
+                                    src="./image/what-we-do/img-mob.jpg" 
+                                    alt="картинка-мобильного-разработчика" 
+                                />
                             <div class="card-thumb-work">
                                 <h3 class=" work-list__text">Мобильные приложения</h3>
                             </div>
@@ -140,7 +152,13 @@
                     </li>
                     <li class="work-list__item">
                         <div class="card-thumb">
-                            <img src="./image/img-designe.jpg" alt="картинка-дизайнера" width="370" />
+                                <img 
+                                    srcset="
+                                    ./image/what-we-do/img-designe.jpg 1x,
+                                    ./image/what-we-do/img3desk-2x.jpg 2x"
+                                    src="./image/what-we-do/img-designe.jpg" 
+                                    alt="картинка-мобильного-разработчика" 
+                                />
                             <div class="card-thumb-work">
                                 <h3 class=" work-list__text">Дизайнерские решения</h3>
                             </div>
@@ -159,7 +177,29 @@
                 <div class="comand-wrapper">
                     <ul class="list list--comand">
                         <li class="item-comand">
-                            <img src="./image/img-Igor.jpg" alt="Игорь Демьяненко" width="270">
+                            <picture>
+                                <source 
+                                    srcset="
+                                    ./image/comand/img1desk-1x.jpg 1x,
+                                    ./image/comand/img1desk-2x.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                >
+                                <source 
+                                    srcset="
+                                    ./image/comand/img1tab-1x.jpg 1x,
+                                    ./image/comand/img1tab-2x.jpg 2x" 
+                                    media="(min-width: 768px)"
+                                >
+                                <source 
+                                    srcset="
+                                    ./image/comand/img1mob-1x.jpg 1x,
+                                    ./image/comand/img1mob-2x.jpg 2x" media="(min-width: 320px)"
+                                >
+                                <img 
+                                    src="./image/comand/img1desk-1x.jpg" 
+                                    alt="Игорь Демьяненко" 
+                                >
+                            </picture>
                             <h3 class="comand-title">Игорь Демьяненко</h3>
                             <p class="comand-text pecularities__text">Product Designer</p>
                             <ul class="social-list list">
@@ -198,7 +238,18 @@
                     </ul>
                     <ul class="list list--comand">
                         <li class="item-comand">
-                            <img src="./image/img-Olga.jpg" alt="Ольга Репина" width="270">
+                            <picture>
+                                <source srcset="
+                                    ./image/comand/img2desk-1x.jpg 1x,
+                                    ./image/comand/img2desk-2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="
+                                    ./image/comand/img2tab-1x.jpg 1x,
+                                    ./image/comand/img2tab-2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="
+                                    ./image/comand/img2mob-1x.jpg 1x,
+                                    ./image/comand/img2mob-2x.jpg 2x" media="(min-width: 320px)">
+                                <img src="./image/comand/img2desk-1x.jpg" alt="Ольга Репина">
+                            </picture>
                             <h3 class="comand-title">Ольга Репина</h3>
                             <p class="comand-text pecularities__text">Frontend Developer</p>
                             <ul class="social-list list">
@@ -230,14 +281,23 @@
                                         </svg>
                                     </a>
                                 </li>
-
-
                             </ul>
                         </li>
                     </ul>
                     <ul class="list list--comand">
                         <li class="item-comand">
-                            <img src="./image/img-Nik.jpg" alt="Николай Тарасов" width="270">
+                            <picture>
+                                <source srcset="
+                                    ./image/comand/img3desk-1x.jpg 1x,
+                                    ./image/comand/img3desk-2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="
+                                    ./image/comand/img3tab-1x.jpg 1x,
+                                    ./image/comand/img3tab-2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="
+                                    ./image/comand/img3mob-1x.jpg 1x,
+                                    ./image/comand/img3mob-2x.jpg 2x" media="(min-width: 320px)">
+                                <img src="./image/comand/img3desk-1x.jpg" alt="Николай Тарасов">
+                            </picture>
                             <h3 class="comand-title ">Николай Тарасов</h3>
                             <p class="comand-text pecularities__text">Marketing</p>
                             <ul class="social-list list">
@@ -276,7 +336,18 @@
                     </ul>
                     <ul class="list list--comand">
                         <li class="item-comand">
-                            <img src="./image/img-Mih.jpg" alt="Михаил Ермаков" width="270">
+                            <picture>
+                                <source srcset="
+                                    ./image/comand/img4desk-1x.jpg 1x,
+                                    ./image/comand/img4desk-2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="
+                                    ./image/comand/img4tab-1x.jpg 1x, 
+                                    ./image/comand/img4tab-2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="
+                                    ./image/comand/img4mob-1x.jpg 1x, 
+                                    ./image/comand/img4mob-2x.jpg 2x" media="(min-width: 320px)">
+                                <img src="./image/comand/img4desk-1x.jpg" alt="Михаил Ермаков">
+                            </picture>
                             <h3 class="comand-title">Михаил Ермаков</h3>
                             <p class="comand-text pecularities__text">UI Designer</p>
                             <ul class="social-list list">
