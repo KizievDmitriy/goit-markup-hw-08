@@ -499,6 +499,10 @@ button {
   color: #2196f3;
 }
 
+.menu-list-social__link--position {
+  padding-left: 0;
+}
+
 .page-header {
   position: fixed;
   min-width: 100%;
