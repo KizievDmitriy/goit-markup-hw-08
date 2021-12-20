@@ -393,6 +393,18 @@ button {
   fill: #2196f3;
 }
 
+@media screen and (max-width: 479px) {
+  .menu-button {
+    margin: 8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .menu-button {
+    margin: -8px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .menu-button {
     display: none;

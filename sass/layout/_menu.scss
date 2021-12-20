@@ -10,6 +10,12 @@
   &:focus {
     fill: $accent-color;
   }
+  @media screen and(max-width: 479px) {
+    margin: 8px;
+  }
+  @media screen and(min-width: 480px) {
+    margin: -8px;
+  }
   @media screen and(min-width: 768px) {
     display: none;
   }
