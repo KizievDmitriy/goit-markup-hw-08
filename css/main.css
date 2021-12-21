@@ -1030,8 +1030,8 @@ button {
 
 @media screen and (min-width: 1200px) {
   .mail-box {
+    width: 574px;
     margin-right: 0;
-    margin-left: 93px;
   }
 }
 
