@@ -580,12 +580,7 @@ button {
 @media screen and (max-width: 767px) {
   .list--nav {
     display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .list--nav {
-    margin-left: 88px;
+    margin-left: 0;
   }
 }
 
