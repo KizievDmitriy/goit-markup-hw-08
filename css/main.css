@@ -1451,7 +1451,6 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 320px;
   padding: 40px;
   background: #fff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1473,13 +1472,14 @@ button {
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
+    height: 609px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
-    min-width: 528px;
-    min-height: 581px;
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -1614,7 +1614,7 @@ button {
   position: relative;
   margin-bottom: 30px;
   font-size: 12px;
-  line-height: 1.71em;
+  line-height: 1.16em;
   letter-spacing: 0.03em;
   color: #757575;
   cursor: pointer;
@@ -1623,6 +1623,7 @@ button {
 @media screen and (min-width: 1200px) {
   .chekbox-txt {
     font-size: 14px;
+    line-height: 1.71em;
   }
 }
 
@@ -1659,7 +1660,6 @@ button {
 .checkbox-icon {
   position: absolute;
   border-radius: 4px;
-  top: 3px;
   left: 1px;
   -webkit-transform: scale(0);
           transform: scale(0);
@@ -1676,14 +1676,12 @@ button {
 
 @media screen and (min-width: 768px) {
   .checkbox-icon {
-    top: 4px;
     left: 12px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .checkbox-icon {
-    top: 2px;
     left: 1px;
   }
 }
