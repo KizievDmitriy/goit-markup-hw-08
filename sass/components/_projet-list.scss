@@ -1,17 +1,19 @@
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: calc(-1 * #{$item-card});
+  // margin-bottom: calc(-1 * #{$item-card});
   @media screen and (min-width: 768px) {
-    margin-right: calc(-2 * #{$item-card});
+    margin-right: calc(-1 * #{$item-card});
   }
   @media screen and (min-width: 1200px) {
-    margin-right: calc(-2 * #{$item-card});
+    margin-right: calc(-1 * #{$item-card});
   }
 }
 .project-item {
   width: 100%;
-  margin-bottom: $item-card;
+  &:not(:last-child) {
+    margin-bottom: $item-card;
+  }
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -20,12 +22,31 @@
   }
   @media screen and (min-width: 768px) {
     width: 354px;
+    &:nth-child(even) {
+      margin-right: 0px;
+    }
     // flex-basis: calc((100% / 2) - $item-card);
 
     margin-right: $item-card;
   }
   @media screen and (min-width: 1200px) {
     width: 370px;
+    flex-basis: calc(100% / 3 - 30px);
+    &:nth-child(even) {
+      margin-right: 30px;
+    }
+    &:nth-child(3),
+    &:nth-child(6),
+    &:nth-child(9) {
+      margin-right: 0px;
+    }
+    &:nth-child(7),
+    &:nth-child(8) {
+      margin-bottom: 0;
+    }
+    // &:nth-child(odd) {
+    //   margin-right: 0px;
+    // }
     // flex-basis: calc((100% / 3) - $item-card);
   }
 }
