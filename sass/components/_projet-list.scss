@@ -1,7 +1,7 @@
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  // margin-bottom: calc(-1 * #{$item-card});
+ 
   @media screen and (min-width: 768px) {
     margin-right: calc(-1 * #{$item-card});
   }
@@ -26,7 +26,7 @@
     &:nth-child(even) {
       margin-right: 0px;
     }
-    // flex-basis: calc((100% / 2) - $item-card);
+    
 
     margin-right: $item-card;
   }

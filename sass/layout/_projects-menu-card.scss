@@ -38,3 +38,25 @@
     color: $title-text-color;
   }
 }
+
+.hide {
+  display: none;
+}
+// .animate{
+//   transform: scale(0);
+//   opacity: 0;
+// }
+
+// @keyframes hide{
+//   0% {
+//     visibility: visible;
+//     height: 200px;
+//   }
+//   100% {
+//     visibility: hidden;
+//     height: 0;
+//     width: 0;
+//     margin: 0;
+//     font-size: 0;
+//   }
+// }
